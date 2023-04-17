@@ -22,18 +22,18 @@ images:
 <main class="py-12 md:py-24 flex flex-col justify-start items-center">
   <div class="container content-center grid grid-cols-1 md:grid-cols-2">
     <div class="col-span-1 md:mr-32 lg:mr-52">
-      <h1 class="pl-8 md:pl-0 text-4xl md:text-4xl lg:text-6xl font-heading text-gray-200 font-extralight text-left md:text-right uppercase relative tracking-wider">
+      <h1 class=" inline-block pl-8 md:pl-0 text-4xl md:text-4xl lg:text-6xl font-heading text-gray-200 font-extralight text-right mx-auto uppercase relative tracking-wider">
         <span class="font-normal">Design</span><br>Pipa
       </h1>
     </div>
-    <div class="col-span-1 relative">
-      <h2 class="font-heading font-regular md:font-bold lowercase md:text-4xl lg:text-6xl text-left text-gray-200 md:text-black pl-8 lg:pl-24 tracking-wider md:tracking-normal">Sua idéia,<br> nossa paixão.</h2>
+    <div class="col-span-1 relative ">
+      <h2 class="font-heading font-semibold lowercase text-xs md:text-4xl lg:text-6xl text-left text-gray-200 md:text-black pl-8 lg:pl-24 tracking-wider md:tracking-normal">Sua idéia,<br class="hidden md:block"> nossa paixão.</h2>
     </div>
   </div>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 px-10 md:px-0 relative py-12">
     {% for image in page.images %}
     <div class="col-span-1">
-      <div class="h-32 md:h-64 overflow-hidden">
+      <div class="h-32 w-32 md:h-64 md:w-64 overflow-hidden">
         {% picture large "{{image.image}}" --img alt="{{image.alt_text}}" class="object-cover h-full w-full" %}        
       </div>
     </div>
