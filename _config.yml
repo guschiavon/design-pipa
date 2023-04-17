@@ -16,7 +16,6 @@ comments:
 
 plugins:
   - jekyll-sitemap
-  - jekyll-webp
   - jekyll-postcss
   - jekyll-purgecss
   - jekyll_picture_tag
