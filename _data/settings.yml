@@ -1,58 +1,64 @@
 general:
-  site_url: 
+  site_url: 'https://designpipa.com'
   address:
-  email:
-  phone:
+  email: 'ola@designpipa.com'
+  phone: '(84) 9 9654 9650'
   social:
-    - channel: "Facebook"
-      add_to_chat_bubble: false
-      url: 'https://facebook.com'
-    - channel: "WhatsApp"
-      add_to_chat_bubble: true
-      url: 'https://facebook.com'
-    - channel: "Messenger"
-      add_to_chat_bubble: true
-      url: 'https://facebook.com'
+    - channel: "Instagram"     
+      url: 'https://instagram.com/designpipa'
+    - channel: "WhatsApp"      
+      url: 'https://wa.me/+5584996549650'
+    - channel: "Email"      
+      url: 'ola@designpipa.com'
 branding:
-  site_title: Jekyll Tailwind CloudCannon
+  site_title: Design e Gerenciamento de Mídias Sociais - Design Pipa
   nav_logo_image: /assets/images/logo.png
   footer_logo_image:
   preview_image:
-navigation:
-  menus:
-    - name: About
-      url: /about
-      is_dropdown: false
-      style_as_button: false
-      submenus:
-        - name:
-          url:
-    - name: Dropdown
-      url: '#'
-      is_dropdown: true
-      style_as_button: false
-      submenus:
-        - name: Item 1
-          url: /
-        - name: Item 2
-          url: /
-        - name: Item 3
-          url: /
-    - name: More
-      url: '#'
-      is_dropdown: true
-      style_as_button: false
-      submenus:
-        - name: Item 1
-          url: /
-        - name: Item 2
-          url: /
-        - name: Item 3
-          url: /
+# navigation:
+#   menus:
+#     - name: About
+#       url: /about
+#       is_dropdown: false
+#       style_as_button: false
+#       submenus:
+#         - name:
+#           url:
+#     - name: Dropdown
+#       url: '#'
+#       is_dropdown: true
+#       style_as_button: false
+#       submenus:
+#         - name: Item 1
+#           url: /
+#         - name: Item 2
+#           url: /
+#         - name: Item 3
+#           url: /
+#     - name: More
+#       url: '#'
+#       is_dropdown: true
+#       style_as_button: false
+#       submenus:
+#         - name: Item 1
+#           url: /
+#         - name: Item 2
+#           url: /
+#         - name: Item 3
+#           url: /
 seo:
-  site_description_text:
+  site_description_text: Design gráfico, produção e impressão em Pipa e Tibau do Sul. 
   keywords:
+    - design Pipa
+    - gráfica Pipa
+    - designer gráfico em Pipa    
 configuration:
-  head_code_block: 
+  head_code_block: >-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet preload" onload="this.rel = 'stylesheet'" as="style" crossorigin="anonymous" type="text/css">
+    <noscript>
+       <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet" as="style" crossorigin="anonymous" type="text/css">
+    </noscript>
   body_code_block:
   custom_css_code_block:   

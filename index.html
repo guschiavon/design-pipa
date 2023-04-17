@@ -1,18 +1,68 @@
 ---
 layout: default
-image: /assets/images/clau.jpg
+title: Design Pipa - Gráfica e Gerenciamento de Midias Sociais em Pipa
+description:
+images:
+  - image: /assets/images/design-pipa-01.jpg
+    alt_text: Alt text here
+  - image: /assets/images/design-pipa-02.jpg
+    alt_text: Alt text here
+  - image: /assets/images/design-pipa-03.jpg
+    alt_text: Alt text here
+  - image: /assets/images/design-pipa-04.jpg
+    alt_text: Alt text here
 ---
-<main class="px-24 py-3 h-screen md:px-6 md:bg-gray-200 flex flex-col justify-center items-center">
-  <h1 class="text-6xl font-body text-primary">
-    Jekyll TailwindCSS Cloudcannon Boilerplate
-  </h1>
-  {% picture jpt-webp "{{site.data.settings.branding.nav_logo_image}}" %}
-  <div class="h-56 w-56 overflow-hidden">
-    {% picture jpt-webp "{{page.image}}" class="object-contain w-full h-full" %}
+
+
+<img src="/assets/graphics/fundo-logo-preto.svg" alt="" class="background-element-1">
+<div class="absolute top-12 md:top-4 right-4 text-gray-800 flex flex-col md:flex-row gap-2 md:gap-4">
+  <a href="tel:{{site.data.settings.general.phone}}" class="font-heading text-xs md:text-sm lg:text-normal">{{site.data.settings.general.phone}}</a>
+  <a href="mailto:{{site.data.settings.general.email}}" class="font-heading text-xs md:text-sm lg:text-normal">{{site.data.settings.general.email}}</a>
+</div>
+<main class="py-12 md:py-24 flex flex-col justify-start items-center">
+  <div class="container content-center grid grid-cols-1 md:grid-cols-2">
+    <div class="col-span-1 md:mr-32 lg:mr-52">
+      <h1 class="pl-8 md:pl-0 text-4xl md:text-4xl lg:text-6xl font-heading text-gray-200 font-extralight text-left md:text-right uppercase relative tracking-wider">
+        <span class="font-normal">Design</span><br>Pipa
+      </h1>
+    </div>
+    <div class="col-span-1 relative">
+      <h2 class="font-heading font-regular md:font-bold lowercase md:text-4xl lg:text-6xl text-left text-gray-200 md:text-black pl-8 lg:pl-24 tracking-wider md:tracking-normal">Sua idéia,<br class="hidden md:block"> nossa paixão.</h2>
+    </div>
   </div>
-
-  <div class="h-96 w-96 overflow-hidden bg-cover bg-center bg-no-repeat" style='background-image: url({% picture direct "{{page.image}}" %});'>
-
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 relative py-12">
+    {% for image in page.images %}
+    <div class="col-span-1">
+      <div class="h-32 md:h-64 overflow-hidden">
+    
+        <img src="{{image.image}}" alt="{{image.alt_text}}" class="object-cover h-full w-full">
+      </div>
+    </div>
+    {% endfor %}    
   </div>
-
+  <div class="flex flex-col items-center justify-center gap-4">
+    <p class="font-heading text-xl md:text-2xl lg:text-3xl font-normal uppercase">Design Gráfico</p>
+    <p class="font-heading text-xl md:text-2xl lg:text-3xl font-normal uppercase">Produção e Impressão</p>
+    <p class="font-heading text-xl md:text-2xl lg:text-3xl font-normal uppercase">Mídia Digital</p>
+    <p class="font-heading text-xl md:text-2xl lg:text-3xl font-normal uppercase">Assistência Criativa</p>
+  </div>
+  <div class="flex flex-col items-center justify-center gap-4 py-6">
+    <h2 class="font-heading text-xl md:text-2xl uppercase font-light">Entre em contato com a gente:</h2>
+    <div class="flex gap-4">
+      {% for social in site.data.settings.general.social %}
+      <a href="{{social.url}}" rel="noopener noreferrer" class="bg-black rounded-full overflow-hidden h-12 w-12 p-3">{%
+        include social-icons.html icon=social.channel fill="#f2f2f2"%}</a>
+      {% endfor %}
+    </div>
+  </div>
+  
+  <div class="flex flex-col items-center justify-center gap-6 py-6 md:py-12">
+    <div class="h-48 md:h-56 rounded-full overflow-hidden">
+      <img src="/assets/images/design-pipa-01.jpg" alt="" class="object-cover h-full w-full">
+    </div>
+    <div class="text-center">
+      <p class="font-body italic text-2xl md:text-3xl mb-2">Aqui sempre tem um café e papo criativo,</p>
+      <p class="font-heading uppercase text-2xl"><span class="font-semibold">Vamos</span>Criar?</p>
+    </div>
+  </div>
 </main>

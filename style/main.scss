@@ -1,9 +1,43 @@
 ---
 ---
 
-
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.background-element-1 {
+  @apply
+  absolute top-0 left-0 h-64;
+}
+@media (min-width: 768px) {
+  .background-element-1 {
+    height: 380px;
+  }
+}
+@media (min-width: 1024px) {
+  .background-element-1 {
+    height: 500px;
+  }
+}
+@media (min-width: 1440px) {
+  .background-element-1 {
+    height: 600px;
+  }
+}
+@media (min-width: 1600px) {
+  .background-element-1 {
+    height: 650px;
+  }
+}
+@media (min-width: 1740px) {
+  .background-element-1 {
+    height: 700px;
+  }
+}
+@media (min-width: 1850px) {
+  .background-element-1 {
+    height: 750px;
+  }
+}
 
 {{site.data.settings.configuration.custom_css_code_block}};
