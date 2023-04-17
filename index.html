@@ -27,10 +27,10 @@ images:
       </h1>
     </div>
     <div class="col-span-1 relative">
-      <h2 class="font-heading font-regular md:font-bold lowercase md:text-4xl lg:text-6xl text-left text-gray-200 md:text-black pl-8 lg:pl-24 tracking-wider md:tracking-normal">Sua idéia,<br class="hidden md:block"> nossa paixão.</h2>
+      <h2 class="font-heading font-regular md:font-bold lowercase md:text-4xl lg:text-6xl text-left text-gray-200 md:text-black pl-8 lg:pl-24 tracking-wider md:tracking-normal">Sua idéia,<br> nossa paixão.</h2>
     </div>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 relative py-12">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 px-10 md:px-0 relative py-12">
     {% for image in page.images %}
     <div class="col-span-1">
       <div class="h-32 md:h-64 overflow-hidden">
@@ -56,9 +56,8 @@ images:
   </div>
   
   <div class="flex flex-col items-center justify-center gap-6 py-6 md:py-12">
-    <div class="h-48 md:h-56 rounded-full overflow-hidden">
-      {% picture large "/assets/images/agustina-correa-design-pipa.jpg" --img class="object-cover h-full w-full" alt="Agustina Correa da Design Pipa"%}
-      
+    <div class="h-48 w-48 md:h-56 md:w-48 rounded-full overflow-hidden">
+      {% picture large "/assets/images/agustina-correa-design-pipa.jpg" --img class="object-cover h-full w-full" alt="Agustina Correa da Design Pipa"%}      
     </div>
     <div class="text-center">
       <p class="font-body italic text-2xl md:text-3xl mb-2">Aqui sempre tem um café e papo criativo,</p>

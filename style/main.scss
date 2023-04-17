@@ -7,7 +7,13 @@
 
 .background-element-1 {
   @apply
-  absolute top-0 left-0 h-64;
+  absolute top-0 left-0;
+  height: 210px;
+}
+@media (min-width: 460px) {
+  .background-element-1 {
+    height: 250px;
+  }
 }
 @media (min-width: 768px) {
   .background-element-1 {

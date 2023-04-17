@@ -12,9 +12,9 @@ general:
       url: 'ola@designpipa.com'
 branding:
   site_title: Design e Gerenciamento de Mídias Sociais - Design Pipa
-  nav_logo_image: /assets/images/logo.png
+  nav_logo_image: 
   footer_logo_image:
-  preview_image:
+  preview_image: /assets/images/preview.jpg
 # navigation:
 #   menus:
 #     - name: About
